@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AuthForm from './sign/sign';
 import LoginForm from './sign/login';
+import Main from './main/main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginForm />
+    <App />
   </React.StrictMode>
 );
 

@@ -1,0 +1,36 @@
+.container {
+    background-color: white;
+}
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    height: 20%;
+    align-items: center;
+}
+.tm {
+    position: absolute;
+    left: 10px;
+}
+.navTrip{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.icon {
+    margin-left: 5px;
+}
+.searchC {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.loginB {
+    position: absolute;
+    right: 0px;
+}
+.buttonList {
+    display: flex;
+    justify-content: center;
+}
