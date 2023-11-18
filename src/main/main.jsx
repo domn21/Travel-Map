@@ -20,17 +20,19 @@ const Main = () => {
                     <h3>해외 여행</h3>
                     <CgChevronDown className={style.icon} />
                 </div>
-                <div className={style.serachC}>
-                    <CgSearch className={style.icon} />
-                    <h3>Search</h3>
+                <div className={style.leftNav}>
+                    <div className={style.serachC}>
+                        <CgSearch className={style.icon} />
+                        <h3>Search</h3>
+                    </div>
+                    <Link to="/sign">
+                    <button className={style.loginB}>login</button>
+                </Link>
                 </div>
-                <button className={style.loginB}>login</button>
             </div>
             <img src={img} className={style.mainimg} />
             <div className={style.buttonList}>
-                <Link to="/sign">
-                <button>기록하기</button>
-                </Link>
+                    <button>기록하기</button>
                 <button>See how it Works</button>
             </div>
         </div>

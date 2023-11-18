@@ -3,13 +3,13 @@
 }
 .nav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     height: 20%;
     align-items: center;
 }
 .tm {
     position: absolute;
-    left: 10px;
+    left: 3%;
 }
 .navTrip{
     flex-direction: row;
@@ -20,15 +20,15 @@
 .icon {
     margin-left: 5px;
 }
-.searchC {
+
+.leftNav {
     position: absolute;
-    right: 10px;
+    right: 3%;
+    display: flex;
+}
+.serachC {
     display: flex;
     flex-direction: row;
-}
-.loginB {
-    position: absolute;
-    right: 0px;
 }
 .buttonList {
     display: flex;

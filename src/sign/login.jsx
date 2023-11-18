@@ -2,8 +2,11 @@
 import React, { useState } from 'react';
 import './loginstyle.css';
 import { firebaseAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "./firebase";
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
+  const navigate = useNavigate(); 
+
   const [isSignUp, setIsSignUp] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -26,12 +29,16 @@ const LoginForm = () => {
         // 회원가입
         const createdUser = await createUserWithEmailAndPassword(firebaseAuth, email, password);
         console.log(createdUser);
+
       } else {
         // 로그인
         const curUserInfo = await signInWithEmailAndPassword(firebaseAuth, email, password);
         console.log(curUserInfo);
         // 로그인에 성공했을 때 추가적인 로직을 넣으세요.
         console.log('로그인 성공');
+
+        console.log("Navigating to MyPage");
+        navigate('/mypage');
       }
 
       // 공통: 이메일과 비밀번호 초기화
@@ -107,4 +114,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
